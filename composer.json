@@ -1,0 +1,23 @@
+{
+    "name": "wdst/lock",
+    "version": "1.0.0",
+    "description": "Библиотека для работы с lock файлом",
+
+    "keywords": [
+        "lockfile"
+    ],
+    "authors": [
+        {
+            "name": "wdst",
+            "email": "wds@mail.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "wdst\\lock\\": ""
+        }
+    }
+}
