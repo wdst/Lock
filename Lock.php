@@ -35,7 +35,11 @@ Class Lock {
             throw new LockException("Lockfile don't writable: " . $this->lockfile);
             return false;
         }
-        file_put_contents('$this->lockfile', $this->getInfo());
+        file_put_contents($this->lockfile, $this->getInfo());
+        if(!file_exists($this->lockfile)){
+            throw new LockException("Do not create lockfile: " . $this->lockfile);
+            return false;
+        }
         return true;
     }
 

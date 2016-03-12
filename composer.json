@@ -1,6 +1,6 @@
 {
     "name": "wdst/lock",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Библиотека для работы с lock файлом",
 
     "keywords": [
@@ -13,7 +13,9 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+         "phpunit/phpunit": "3.7.*"
+    
     },
     "autoload": {
         "psr-4": {
